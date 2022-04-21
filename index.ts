@@ -1,13 +1,12 @@
-let parrafos = document.getElementsByClassName("ocultarp");
+let parrafos = document.getElementsByClassName("ocultar");
 
-//let btnMenos = document.getElementsByClassName("ocultar");
-let btnMas = document.getElementsByClassName("mas");
+let btnMas = document.getElementsByClassName("aparece");
 console.log(parrafos);
 console.log(btnMas);
-//console.log(btnMenos);
+
 for (let i: number = 0; i < btnMas.length; i++) {
   btnMas[i].addEventListener("click", function () {
-    parrafos[i].classList.toggle("ocultarp");
+    parrafos[i].classList.remove("ocultar");
     btnMas[i].classList.toggle("ocultar");
   });
 }
